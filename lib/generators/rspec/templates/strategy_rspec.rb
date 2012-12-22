@@ -3,9 +3,9 @@ require 'spec_helper'
 
 describe <%= singular_name.camelize %>Strategy do
   let(:context) { {} }
-  let(:strategy) { desribed_class.new(context) }
+  let(:strategy) { described_class.new(context) }
   subject { strategy }
 
-  desribe '#<%= singular_name %>' do
+  describe '#<%= singular_name %>' do
   end
 end
