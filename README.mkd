@@ -1,5 +1,7 @@
 # ActiveStrategy
 
+[![Build Status](https://travis-ci.org/rosylilly/active_strategy.png?branch=master)](https://travis-ci.org/rosylilly/active_strategy)
+
 Extract the business logic from the model.
 
 # Usage
