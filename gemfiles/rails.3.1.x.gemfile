@@ -1,0 +1,7 @@
+source :rubygems
+
+gem 'active_strategy', :path => '..'
+
+gem 'rails', '~> 3.1.0'
+gem 'sqlite3'
+gem 'rspec-rails'
