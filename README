@@ -1,0 +1,43 @@
+# ActiveStrategy
+
+Extract the business logic from the model.
+
+# Usage
+
+1. bundle `active_strategy` gem
+2. create a strategy class. For example, a strategy for a `login` method should be named `LoginStrategy`. You can use the generator for doing this (`$ rails generate strategy Login`)
+
+# Examples
+
+```ruby
+# app/models/user.rb
+class User < ActiveRecord::Base
+  include ActiveStrategy::Context
+
+  strategy :login, class_method: true
+
+  attr_accessible :email, :password
+end
+
+# app/strategies/login_strategy.rb
+class LoginStrategy
+  include ActiveStrategy::Strategy
+
+  def login(email, password)
+    user = @class.where(:email => email).first
+
+    return user.try(:password) == password ? user : nil
+  end
+end
+
+# app/controllers/authenticate_controller.rb
+class AuthenticateController < ApplicationControlelr
+  def login
+    session[:user_id] = User.login(params[:email], params[:password])
+  end
+end
+```
+
+# Copyright
+
+Copyright (c) 2012 Sho Kusano. See MIT-LICENSE for further details.
