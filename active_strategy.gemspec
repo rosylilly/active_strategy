@@ -7,15 +7,13 @@ require "active_strategy/version"
 Gem::Specification.new do |s|
   s.name        = "active_strategy"
   s.version     = ActiveStrategy::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActiveStrategy."
-  s.description = "TODO: Description of ActiveStrategy."
+  s.authors     = ["Sho Kusano"]
+  s.email       = ["rosylilly@aduca.org"]
+  s.homepage    = "https://github.com/rosylilly/active_strategy"
+  s.summary     = "Extract the business logic from the model"
+  s.description = "Extract the business logic from the model"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-
-  s.add_dependency 'rails', '~> 3.2.9'
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README"]
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails', '~> 2.12.0'
