@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/rosylilly/active_strategy.png?branch=master)](https://travis-ci.org/rosylilly/active_strategy)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/rosylilly/active_strategy)
+[![Dependency Status](https://gemnasium.com/rosylilly/active_strategy.png)](https://gemnasium.com/rosylilly/active_strategy)
 
 Extract the business logic from the model.
 
