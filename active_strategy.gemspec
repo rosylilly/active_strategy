@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Extract the business logic from the model"
   s.description = "Extract the business logic from the model"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.mkd"]
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails', '~> 2.12.0'
