@@ -38,7 +38,7 @@ describe ActiveStrategy::Context do
 
     context 'when class method' do
       before do
-        User.strategy(:sample, class_method: true)
+        User.strategy(:sample, :class_method => true)
       end
 
       it('User.sample exists') do
