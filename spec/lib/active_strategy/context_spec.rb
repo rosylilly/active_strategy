@@ -22,7 +22,7 @@ describe ActiveStrategy::Context do
       end
 
       it('User#sample exists') do
-        User.instance_methods.should include(:sample)
+        User.instance_methods.map(&:to_sym).should include(:sample)
       end
 
       it 'called SampleStrategy#sample' do
@@ -42,7 +42,7 @@ describe ActiveStrategy::Context do
       end
 
       it('User.sample exists') do
-        User.methods.should include(:sample)
+        User.methods.map(&:to_sym).should include(:sample)
       end
 
       it 'called SampleStrategy#sample' do
